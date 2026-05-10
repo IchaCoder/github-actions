@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
+  console.log('Getting data...');
+  const msg = 'Helo world';
+
   res.send('Works on my machine.');
 });
 
